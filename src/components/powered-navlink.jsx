@@ -9,8 +9,8 @@ const PoweredNavlink = ({className, ...props}) =>
         className={
             ({ isActive, isPending }) =>
                 clsx(
-                    isActive ?? "active",
-                    isPending ?? "pending",
+                    isActive && "active",
+                    isPending && "pending",
                     className
                 )
         }
