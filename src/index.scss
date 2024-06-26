@@ -119,6 +119,55 @@ footer
   }
 }
 
+.slider
+{
+  position: relative;
+  height: 415px;
+  border-radius: 25px;
+  background: gray;
+  overflow: hidden;
+
+  &> .image
+  {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  &> p
+  {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    bottom: 25px;
+    margin: 0 0 0 -100px;
+    width: 200px;
+    left: 50%;
+  }
+  &> .prev, &> .next
+  {
+    position: absolute;
+    top: 50%;
+    height: 96px;
+    margin-top: -48px;
+    cursor: pointer;
+  }
+  &> .prev
+  {
+    left: 0;
+  }
+  &> .next
+  {
+    right: 0;
+  }
+}
+
+
 header, .introduction, .thumbgrid
 {
   margin-bottom: 50px;
