@@ -1,6 +1,6 @@
-const Tag = ({name, ...props}) =>
+const Tag = ({children, ...props}) =>
 (
-    <span {...props} className="tag">{name}</span>
+    <span {...props} className="tag">{children}</span>
 );
 
 export default Tag;
