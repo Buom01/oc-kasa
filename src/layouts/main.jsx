@@ -20,10 +20,12 @@ export default function MainLayout()
 
   return (
     <>
+      <div className="container">
       <Header/>
       <main>
         <Outlet />
       </main>
+      </div>
       <Footer/>
     </>
   );

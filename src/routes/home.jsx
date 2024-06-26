@@ -1,6 +1,11 @@
+import Introduction from "../components/introduction";
+import introBackground from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.png';
+
 export default function Home()
 {
   return (
-    <div>Home</div>
+    <>
+      <Introduction title="Chez vous, partout et ailleurs" image={introBackground}/>
+    </>
   );
 }
