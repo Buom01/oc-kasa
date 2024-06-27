@@ -272,6 +272,12 @@ footer
   }
 }
 
+.stars
+{
+  display: flex;
+  gap: 4px;
+}
+
 header, .introduction, .thumbgrid
 {
   margin-bottom: 50px;

@@ -4,6 +4,7 @@ import imageOne from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.png';
 import imageTwo from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png';
 import Tags from "../components/tags";
 import Spoiler from "../components/spoiler";
+import Stars from "../components/stars";
 
 export default function Logement()
 {
@@ -22,6 +23,7 @@ export default function Logement()
         ................................<br/>
         .............................
       </Spoiler>
+      <Stars count={3}/>
     </>
   );
 }
