@@ -5,6 +5,7 @@ import imageTwo from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png';
 import Tags from "../components/tags";
 import Spoiler from "../components/spoiler";
 import Stars from "../components/stars";
+import Equipments from "../components/equipments";
 
 export default function Logement()
 {
@@ -29,6 +30,7 @@ export default function Logement()
         .............................
       </Spoiler>
       <Stars count={3}/>
+      <Equipments values={["Wifi", "Terasse", "..."]}/>
     </>
   );
 }
