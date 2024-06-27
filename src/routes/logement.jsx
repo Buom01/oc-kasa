@@ -19,7 +19,8 @@ export default function Logement()
       </div>
 
       <Spoiler title="Description">
-        ...
+        ................................<br/>
+        .............................
       </Spoiler>
     </>
   );

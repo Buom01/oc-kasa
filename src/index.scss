@@ -191,13 +191,13 @@ footer
   {
     opacity: 0;
     transform: translateY(-100%);
-    clip-path: rect(100% 0% 100% 100%);
+    clip-path: inset(100% 0 0 0);
   }
   100%
   {
     opacity: 1;
     transform: translateY(0px);
-    clip-path: rect(0% 0% 100% 100%);
+    clip-path: inset(0% 0 0 0);
   }
 }
 @keyframes slideUp {
@@ -205,13 +205,13 @@ footer
   {
     opacity: 1;
     transform: translateY(0px);
-    clip-path: rect(0% 0% 100% 100%);
+    clip-path: inset(0% 0 0 0);
   }
   100%
   {
     opacity: 0;
     transform: translateY(-100%);
-    clip-path: rect(100% 0% 100% 100%);
+    clip-path: inset(100% 0 0 0);
   }
 }
 
@@ -254,6 +254,7 @@ footer
     font-size: 18px;
     color: black;
 
+    position: relative;
     opacity: 0;
     animation: slideUp 300ms ease-in-out;
   }
