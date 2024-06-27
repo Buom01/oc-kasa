@@ -1,3 +1,7 @@
+*
+{
+  margin: 0;
+}
 
 body
 {
@@ -9,7 +13,7 @@ body
   line-height: 1.4258;
 }
 
-header
+header.headbar
 {
   display: flex;
   align-items: center;
@@ -40,6 +44,17 @@ header
       }
     }
   }
+}
+
+h2
+{
+  color: #FF6060;
+  font-size: 36px;
+
+}
+header > h2 + p
+{
+  font-size: 18px;
 }
 
 .container

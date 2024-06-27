@@ -15,6 +15,11 @@ export default function Logement()
         {src: imageTwo, alt: 'Image 2'}
       ]}/>
 
+      <header>
+        <h2>Cozy loft on the Canal Saint-Martin</h2>
+        <p>Paris, île de France</p>
+      </header>
+
       <div>
         <Tags tags={['Cozy', 'Canal']}/>
       </div>

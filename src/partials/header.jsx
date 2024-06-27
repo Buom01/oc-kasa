@@ -3,7 +3,7 @@ import Logo from "../components/logo";
 
 const Header = () =>
 (
-    <header>
+    <header className="headbar">
         <Logo/>
         <nav>
             <PoweredNavlink to="/">Accueil</PoweredNavlink>
