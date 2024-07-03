@@ -41,9 +41,13 @@ const Slider = ({images}) =>
     return (
         <div className="slider">
             <img {...{src,alt}} className="image" />
-            <img src={prevIcon} alt="Précédente" className="prev" onClick={prevAction}/>
-            <img src={nextIcon} alt="Suivante" className="next" onClick={nextAction}/>
-            <p className="pagination">{position+1}/{images.length}</p>
+            {images.length > 1 &&
+                <>
+                    <img src={prevIcon} alt="Précédente" className="prev" onClick={prevAction}/>
+                    <img src={nextIcon} alt="Suivante" className="next" onClick={nextAction}/>
+                    <p className="pagination">{position+1}/{images.length}</p>
+                </>
+            }
         </div>
     );
 };
