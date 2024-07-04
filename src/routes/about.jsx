@@ -9,11 +9,19 @@ export default function Home()
     <>
       <Introduction image={aboutBackground}/>
       <div className={styles.main}>
-        <Spoiler title="Description">
+        <Spoiler title="Fiabilité">
           ................................<br/>
           .............................
         </Spoiler>
-        <Spoiler title="Description">
+        <Spoiler title="Respect">
+          ................................<br/>
+          .............................
+        </Spoiler>
+        <Spoiler title="Service">
+          ................................<br/>
+          .............................
+        </Spoiler>
+        <Spoiler title="Sécurité">
           ................................<br/>
           .............................
         </Spoiler>
