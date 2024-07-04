@@ -9,11 +9,11 @@ export default function Home()
     <>
       <Introduction title="Chez vous, partout et ailleurs" image={introBackground}/>
       <ThumbGrid>
-        <Thumb name="Location 1"/>
-        <Thumb name="Location 2"/>
-        <Thumb name="Location 3"/>
-        <Thumb name="Location 4"/>
-        <Thumb name="Location 5"/>
+        <Thumb name="Location 1" href="/lodgement/1"/>
+        <Thumb name="Location 2" href="/lodgement/1"/>
+        <Thumb name="Location 3" href="/lodgement/1"/>
+        <Thumb name="Location 4" href="/lodgement/1"/>
+        <Thumb name="Location 5" href="/lodgement/1"/>
       </ThumbGrid>
     </>
   );

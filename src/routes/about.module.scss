@@ -1,0 +1,16 @@
+.main
+{
+    display: flex;
+    margin: -12px 108.5px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width: 720px)
+{
+    .main
+    {
+        margin: -3px 0;
+        gap: 20px;
+    }
+}

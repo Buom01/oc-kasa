@@ -1,0 +1,46 @@
+.main
+{
+    text-align: center;
+    & > h2
+    {
+        margin: 78px 0;
+        font-size: 288px;
+        font-weight: 700;
+    }
+    & > p
+    {
+        color: #FF6060;
+        font-weight: 500;
+        font-size: 36px;
+    }
+    & > a
+    {
+        display: inline-block;
+        color: black;
+        font-size: 18px;
+        margin: 127.5px 0 85px;
+    }
+}
+
+
+// Mobile
+@media (max-width: 720px)
+{
+    .main
+    {
+        & > h2
+        {
+            margin: 92.5px 0;
+            font-size: 96px;
+        }
+        & > p
+        {
+            font-size: 18px;
+        }
+        & > a
+        {
+            font-size: 14px;
+            margin: 106px 0 85px;
+        }
+    }
+}

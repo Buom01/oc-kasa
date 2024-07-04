@@ -7,7 +7,7 @@ const Header = () =>
         <Logo/>
         <nav>
             <PoweredNavlink to="/">Accueil</PoweredNavlink>
-            <PoweredNavlink to="/a-propos">A propos</PoweredNavlink>
+            <PoweredNavlink to="/about">A propos</PoweredNavlink>
         </nav>
     </header>
 );

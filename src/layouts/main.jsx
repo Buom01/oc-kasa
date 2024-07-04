@@ -14,17 +14,17 @@ export async function loader()
   return {};
 }
 
-export default function MainLayout()
+export default function MainLayout({children})
 {
   // const {  } = useLoaderData();
 
   return (
     <>
       <div className="container">
-      <Header/>
-      <main>
-        <Outlet />
-      </main>
+        <Header/>
+        <main>
+          {children ?? <Outlet />}
+        </main>
       </div>
       <Footer/>
     </>
