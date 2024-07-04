@@ -1,8 +1,29 @@
-.main
+.main  // @Présente-moi
 {
   position: relative;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%), #FF6060;
   border-radius: 10px;
+  overflow: hidden;
+  &::before
+  {
+    content: '';
+    position: absolute;
+    top:0; bottom: 0; left: 0; right: 0;
+    background: #FF6060;
+  }
+  &::after
+  {
+    content: '';
+    position: absolute;
+    top:0; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+  }
+
+  & > img
+  {
+    position: absolute;
+    top:0; bottom: 0; left: 0; right: 0;
+  }
+
   & > span
   {
     position: absolute;
@@ -11,5 +32,7 @@
     color: white;
     bottom: 20px;
     left: 20px;
+    right: 20px;
+    z-index: 99;
   }
 }
