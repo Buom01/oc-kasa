@@ -15,10 +15,10 @@ const Stars = ({count = 0, total = 5}) =>
 (
     <div className={styles.main}>
         {[...new Array(count)].map(
-            () => <Star active/>
+            (_, index) => <Star active key={`star-${index}`}/>
         )}
         {[...new Array(total - count)].map(
-            () => <Star/>
+            (_, index) => <Star key={`star-${count + index}`}/>
         )}
     </div>
 )
