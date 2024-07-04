@@ -1,6 +1,6 @@
 const Thumb = ({name, ...props}) =>
 (
-    <div {...props} className="thumb"><span>{name}</span></div>
+    <a {...props} className="thumb"><span>{name}</span></a>
 )
 
 export default Thumb;
