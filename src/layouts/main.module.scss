@@ -1,0 +1,13 @@
+.container
+{
+  padding: 45px 100px 50px 100px; 
+}
+
+// Mobile
+@media (max-width: 720px)
+{
+  .container
+  {
+    padding: 20px 20px 27px 20px;
+  }
+}

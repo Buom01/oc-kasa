@@ -1,0 +1,26 @@
+.main
+{
+  overflow: hidden;
+  padding: 46px 121px 29px 121px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  // padding: 66px;
+  & > svg
+  {
+    width: 122px;
+  }
+  & > p
+  {
+    margin: 0;
+  }
+}
+
+// Mobile
+@media (max-width: 720px)
+{
+  .main
+  {
+    padding: 46px 127px 58px 127px;
+  }
+}

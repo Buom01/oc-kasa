@@ -1,0 +1,58 @@
+.headbar
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 57px;
+  margin-bottom: 50px;
+  
+  & > .logo
+  {
+    line-height: 1em;
+  }
+
+  & > .logo svg
+  {
+    height: 68px;
+  }
+  
+  & > nav
+  {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 57px;
+    font-weight: 500;
+    
+    & > a
+    {
+      color: black;
+      text-decoration: none;
+      
+      &.active, &.pending
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px)
+{
+  .headbar
+  {
+    gap: 26px;
+    margin-bottom: 27px;
+    
+    & > .logo svg
+    {
+      height: 46.88px;
+    }
+    
+    & > nav
+    {
+      gap: 26px;
+      text-transform: uppercase;
+    }
+  }
+}

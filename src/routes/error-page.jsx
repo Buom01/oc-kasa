@@ -15,7 +15,7 @@ export default function ErrorPage()
   return (
     <MainLayout>
       <div className={styles.main}>
-        <h2>{error.status}</h2>
+        <h1>{error.status}</h1>
         <p>{message}</p>
         <a href="/">Retourner sur la page d’accueil</a>
       </div>

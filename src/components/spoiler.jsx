@@ -1,6 +1,8 @@
 import { useState } from "react";
 import clsx from 'clsx';
 
+import styles from './spoiler.module.scss'
+
 const Spoiler = ({title, children, ...props}) =>
 {
     const [_open, _setOpen] = useState(false);
@@ -19,12 +21,12 @@ const Spoiler = ({title, children, ...props}) =>
     return (
         <details
                 {...props}
-                className={clsx('spoiler', open && 'open')}
+                className={clsx(styles.main, open && styles.open)}
                 open={_open} onClick={toggleAction}
                 onTransitionEnd={updateRawOpenState}
             >
             <summary>{title}</summary>
-            <div className="content">{children}</div>
+            <div className={styles.content}>{children}</div>
         </details>
     );
 }

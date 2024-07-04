@@ -21,8 +21,8 @@ export default function Lodgement()
       <div className={styles.infos}>
         
       <div className={styles.infosShowoff}>
-        <header>
-          <h2>Cozy loft on the Canal Saint-Martin</h2>
+        <header className={styles.header}>
+          <h1>Cozy loft on the Canal Saint-Martin</h1>
           <p>Paris, île de France</p>
         </header>
         <Tags tags={['Cozy', 'Canal']}/>

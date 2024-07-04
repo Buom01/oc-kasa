@@ -5,6 +5,19 @@
     gap: 24px;
 }
 
+.header
+{
+    & > h1
+    {
+        color: #FF6060;
+        font-size: 36px;
+    }
+    & > p
+    {
+        font-size: 18px;
+    }
+}
+
 .infos
 {
     display: flex;
@@ -43,6 +56,20 @@
     .main
     {
         gap: 15px;
+    }
+    .header
+    {
+        & > h1
+        {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        & > p
+        {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 500;
+        }
     }
     .infosShowoff
     {

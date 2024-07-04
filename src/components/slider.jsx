@@ -2,10 +2,7 @@ import { useState } from "react";
 import prevIcon from '../assets/previous.svg';
 import nextIcon from '../assets/next.svg';
 
-type sliderImage = {
-    src: String,
-    alt: String
-}
+import styles from './slider.module.scss';
 
 const Slider = ({images}) =>
 {
@@ -39,13 +36,13 @@ const Slider = ({images}) =>
     const {src, alt} = images[position];
 
     return (
-        <div className="slider">
-            <img {...{src,alt}} className="image" />
+        <div className={styles.main}>
+            <img {...{src,alt}} className={styles.image} />
             {images.length > 1 &&
                 <>
-                    <img src={prevIcon} alt="Précédente" className="prev" onClick={prevAction}/>
-                    <img src={nextIcon} alt="Suivante" className="next" onClick={nextAction}/>
-                    <p className="pagination">{position+1}/{images.length}</p>
+                    <img src={prevIcon} alt="Précédente" className={styles.prev} onClick={prevAction}/>
+                    <img src={nextIcon} alt="Suivante" className={styles.next} onClick={nextAction}/>
+                    <p className={styles.pagination}>{position+1}/{images.length}</p>
                 </>
             }
         </div>
