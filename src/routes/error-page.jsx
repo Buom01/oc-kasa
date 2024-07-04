@@ -6,7 +6,6 @@ import styles from './error-page.module.scss';
 export default function ErrorPage()
 {
   const error = useRouteError();
-  console.log(error);
 
   const message = error.status == 404 ?
     "Oups! La page que vous demandez n'existe pas." :
