@@ -16,7 +16,7 @@ export default function Home()
             lodgement =>
               <Thumb
                 name={lodgement.title}
-                href={`/lodgement/${lodgement.id}`}
+                to={`/lodgement/${lodgement.id}`}
                 image={lodgement.cover}
                 key={lodgement.id}
               />

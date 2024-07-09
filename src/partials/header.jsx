@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import PoweredNavlink from "../components/powered-navlink";
 import Logo from "../components/logo";
 import styles from './header.module.scss'
@@ -5,7 +6,7 @@ import styles from './header.module.scss'
 const Header = () =>
 (
     <header className={styles.headbar}>
-        <a className={styles.logo} href="/"><Logo/></a>
+        <NavLink className={styles.logo} to="/"><Logo/></NavLink>
         <nav>
             <PoweredNavlink to="/">Accueil</PoweredNavlink>
             <PoweredNavlink to="/about">A propos</PoweredNavlink>

@@ -1,11 +1,12 @@
+import { NavLink } from 'react-router-dom';
 import styles from './thumb.module.scss'
 
 const Thumb = ({name, image, ...props}) =>
 (
-    <a {...props} className={styles.main}>
+    <NavLink {...props} className={styles.main}>
         <img src={image} alt={name}/>
         <span>{name}</span>
-    </a>
+    </NavLink>
 )
 
 export default Thumb;
