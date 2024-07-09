@@ -32,7 +32,7 @@ export default function Lodgement()
       if (!_lodgement)
         navigate('/404', {replace: true});  // @Présente-moi
     },
-    [id]
+    [id, navigate]
   );
 
   let names = lodgement.host.name.split(' '); // @Présente-moi

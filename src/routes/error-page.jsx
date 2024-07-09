@@ -7,7 +7,7 @@ export default function ErrorPage()
 {
   const error = useRouteError();
 
-  const message = error.status == 404 ?
+  const message = error.status === 404 ?
     "Oups! La page que vous demandez n'existe pas." :
     (error.statusText || error.message);
 
