@@ -1,7 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
 
-import imageOne from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.png';
-import imageTwo from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png';
 import Slider from "../components/slider";
 import Tags from "../components/tags";
 import Spoiler from "../components/spoiler";
@@ -11,7 +9,7 @@ import Profile from "../components/profile";
 
 import styles from './lodgement.module.scss';
 import data from '../assets/logements.json';
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function getLodgementSync(id, from)
 {
