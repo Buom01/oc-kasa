@@ -10,7 +10,11 @@ function getLodgementSync(id)
 
 async function lodgementLoader({params})
 {
-    return json(getLodgementSync(params.id));
+  const data = getLodgementSync(params.id);
+  if (!data)
+    throw new Response("Not Found", { status: 404 });
+
+  return json(getLodgementSync(params.id));
 }
 
 export default lodgementLoader;
