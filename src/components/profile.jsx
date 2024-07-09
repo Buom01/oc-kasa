@@ -1,9 +1,5 @@
 import styles from './profile.module.scss';
-
-const Avatar = ({photo, firstname, lastname}) =>
-(
-    <img src={photo} alt={`${firstname} ${lastname}`} className={styles.avatar}/>
-);
+import Avatar from './avatar';
 
 const Profile = ({photo, firstname, lastname}) =>
 (

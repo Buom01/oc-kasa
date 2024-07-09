@@ -1,0 +1,12 @@
+.main
+{
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  
+  // Hide alt text
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
