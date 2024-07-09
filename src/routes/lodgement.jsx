@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 
 import Slider from "../components/slider";
 import Tags from "../components/tags";
@@ -8,32 +8,11 @@ import Equipments from "../components/equipments";
 import Profile from "../components/profile";
 
 import styles from './lodgement.module.scss';
-import data from '../assets/logements.json';
-import { useEffect, useState } from "react";
 
-function getLodgementSync(id, from)
-{
-  return data.find(
-    lodgement => lodgement.id === id
-  );
-}
 
 export default function Lodgement()
 {
-  let navigate = useNavigate();
-  let { id } = useParams();
-  const [lodgement, setLogdement] = useState(() => getLodgementSync(id));  // @Présente-moi
-
-  useEffect(
-    () => {
-      const _lodgement = getLodgementSync(id);
-      setLogdement(_lodgement);
-
-      if (!_lodgement)
-        navigate('/404', {replace: true});  // @Présente-moi
-    },
-    [id, navigate]
-  );
+  const lodgement = useLoaderData(); // @Présente-moi
 
   let names = lodgement.host.name.split(' '); // @Présente-moi
   let firstname = names[0];

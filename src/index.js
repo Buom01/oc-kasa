@@ -13,6 +13,9 @@ import Home from "./routes/home";
 import Lodgement from './routes/lodgement';
 import About from './routes/about';
 
+import lodgementLoader from './loaders/lodgement';
+
+
 const router = createBrowserRouter(
   [
     {
@@ -28,6 +31,7 @@ const router = createBrowserRouter(
         {
           path: "/lodgement/:id",
           element: <Lodgement />,
+          loader: lodgementLoader
         },
         {
           path: "/about",
