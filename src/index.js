@@ -10,10 +10,10 @@ import reportWebVitals from './reportWebVitals';
 import ErrorPage from "./routes/error-page";
 import MainLayout, { loader as layoutLoader } from "./layouts/main";
 import Home from "./routes/home";
-import Lodgement from './routes/lodgement';
+import Accommodation from './routes/accommodation';
 import About from './routes/about';
 
-import lodgementLoader from './loaders/lodgement';
+import accommodationLoader from './loaders/accommodation';
 
 
 const router = createBrowserRouter(
@@ -29,9 +29,9 @@ const router = createBrowserRouter(
           element: <Home />,
         },
         {
-          path: "/lodgement/:id",
-          element: <Lodgement />,
-          loader: lodgementLoader
+          path: "/accommodation/:id",
+          element: <Accommodation />,
+          loader: accommodationLoader
         },
         {
           path: "/about",

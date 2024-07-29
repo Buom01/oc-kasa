@@ -13,12 +13,12 @@ export default function Home()
       <ThumbGrid>
         {
           data.map(
-            lodgement =>
+            accommodation =>
               <Thumb
-                name={lodgement.title}
-                to={`/lodgement/${lodgement.id}`}
-                image={lodgement.cover}
-                key={lodgement.id}
+                name={accommodation.title}
+                to={`/accommodation/${accommodation.id}`}
+                image={accommodation.cover}
+                key={accommodation.id}
               />
           )
         }

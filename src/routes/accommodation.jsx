@@ -7,43 +7,43 @@ import Stars from "../components/stars";
 import Equipments from "../components/equipments";
 import Profile from "../components/profile";
 
-import styles from './lodgement.module.scss';
+import styles from './accommodation.module.scss';
 
 
-export default function Lodgement()
+export default function Accommodation()
 {
-  const lodgement = useLoaderData(); // @Présente-moi
+  const accommodation = useLoaderData(); // @Présente-moi
 
-  let names = lodgement.host.name.split(' '); // @Présente-moi
+  let names = accommodation.host.name.split(' '); // @Présente-moi
   let firstname = names[0];
   let lastname = names.slice(1).join(' ')
 
   return (
     <div className={styles.main}>
 
-      <Slider images={lodgement.pictures.map(
-        link => ({src: link, alt: lodgement.title})
+      <Slider images={accommodation.pictures.map(
+        link => ({src: link, alt: accommodation.title})
       )}/>
 
       <div className={styles.infos}>
         <div className={styles.infosShowoff}>
           <header className={styles.header}>
-            <h1>{lodgement.title}</h1>
-            <p>{lodgement.location}</p>
+            <h1>{accommodation.title}</h1>
+            <p>{accommodation.location}</p>
           </header>
-          <Tags tags={lodgement.tags}/>
+          <Tags tags={accommodation.tags}/>
         </div>
         <div className={styles.infosSide}>
-          <Profile firstname={firstname} lastname={lastname} photo={lodgement.host.picture}/>
-          <Stars count={parseInt(lodgement.rating)}/>
+          <Profile firstname={firstname} lastname={lastname} photo={accommodation.host.picture}/>
+          <Stars count={parseInt(accommodation.rating)}/>
         </div>
       </div>
 
       <div className={styles.details}>
         <Spoiler title="Description">
-          {lodgement.description}
+          {accommodation.description}
         </Spoiler>
-        <Equipments values={lodgement.equipments}/>
+        <Equipments values={accommodation.equipments}/>
       </div>
     </div>
   );
