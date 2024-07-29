@@ -49,9 +49,8 @@
             content: none;
             display:none;
         }
-        &::after
+        & span
         {
-            content: '';
             height: 32px;
             width: 32px;
             background: url(../assets/spoiler-marker.svg) no-repeat center/contain;
@@ -74,7 +73,7 @@
     }
     &.open
     {
-        &> summary::after
+        &> summary span
         {
             transform: rotate(-180deg);
         }

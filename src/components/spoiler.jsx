@@ -10,6 +10,8 @@ const Spoiler = ({title, children, ...props}) =>
     const toggleAction = (e) =>
     {
         e.preventDefault();
+        if (e.target.tagName !== "SPAN")  // @Présente-moi
+            return ;
         setOpen((open) => !open);
         if (!open)
             _setOpen(true);
@@ -25,7 +27,10 @@ const Spoiler = ({title, children, ...props}) =>
                 open={_open} onClick={toggleAction}
                 onTransitionEnd={updateRawOpenState}
             >
-            <summary>{title}</summary>
+            <summary>
+                {title}
+                <span/>
+            </summary>
             <div className={styles.content}>{children}</div>
         </details>
     );
