@@ -14,7 +14,7 @@ async function accommodationLoader({params})
   if (!data)
     throw new Response("Not Found", { status: 404 });
 
-  return json(getAccommodationSync(params.id));
+  return json(data);
 }
 
 export default accommodationLoader;
