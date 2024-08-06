@@ -3,7 +3,7 @@ import introBackground from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.png';
 import ThumbGrid from "../components/thumbgrid";
 import Thumb from "../components/thumb";
 
-import data from '../assets/logements.json';
+import data from '../assets/accommodations.json';
 
 export default function Home()
 {

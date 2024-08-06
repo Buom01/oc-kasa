@@ -1,4 +1,4 @@
-import data from '../assets/logements.json';
+import data from '../assets/accommodations.json';
 import { json } from "react-router-dom";
 
 function getAccommodationSync(id)
